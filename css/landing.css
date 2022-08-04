@@ -1,0 +1,275 @@
+:root {
+    --shad-h-f : 5px 5px 10px 0 #C9C9C9;
+    --bg-div: rgb(239 238 238 / 90%);
+    --bg-main : #f9fafc;
+    --font-c-two : #333;
+    --font-a : #6896a0;
+    --bg-contenedor : #3c81bc;
+    --color-golden : #fcb257;
+}
+
+h1, h2, h3, h4 {
+    color: var(--bg-main);
+    text-align: center;
+}
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    color: var(--bg-main);
+    font-size: 15px;
+}
+
+::selection {
+    background-color: var(--color-golden);
+    color: var(--font-c-two);
+}
+
+body {
+    background-color: var(--bg-main);
+}
+
+header.head-bg {
+    background-image: url(../img/25100-min.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-top: 4px solid rgb(173 183 255);
+}
+
+.cont-img > a {
+    margin: 20px auto;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    transition: ease-in-out .2s all;
+}
+
+.cont-img > a > img {
+    width: 70px;
+    padding: 2px;
+    margin: 5px;
+    background-color: var(--bg-main);
+    border: 2px solid rgb(173 183 255);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: ease-in-out .2s all;
+    position: relative;
+}
+
+.cont-img > a:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.slogan {
+    margin: 0 10px;
+}
+
+#slogan-text {
+    color: var(--font-c-two);
+}
+
+/* .bg-h-1 {
+    background: #f56f6f;
+    width: 20%;
+    position: absolute;
+    height: 10%;
+    z-index: -1;
+    left: 0;
+} */
+
+/* CONTENEDOR 1 */
+
+.cont1 {
+    background-color: var(--bg-contenedor);
+    padding: 30px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+    height: max-content;
+}
+
+.cont1 > h1 {
+    font-weight: 700;
+}
+
+.parrafo {
+    width: 55%;
+    /* margin-left: 45%; */
+    padding: 10px;
+    margin-top: 25px;
+}
+
+/* CONTENEDOR 2 */
+
+.cont-info {
+    display: block;
+    position: absolute;
+    top: 115px;
+    right: 5%;
+    height: 430px;
+    width: 360px;
+    background-color: var(--bg-div);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: var(--shad-h-f);
+}
+
+.cont-p2 {
+    text-align: center;
+}
+
+.cont-info span {
+    color: var(--font-c-two);
+    font-size: 20px;
+}
+
+/* .cont3 {
+    display: block;
+    float: right;
+    margin: 50px;
+    padding: 50px;
+} */
+
+.cont-vid {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#copyrights-foot {
+    position: fixed;
+    font-size: 1.5rem;
+    bottom: 0;
+    padding: 5px 20px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--font-c-two);
+    color: var(--bg-main);
+    font-weight: 100;
+}
+
+.cont-p2 {
+    margin-bottom: 20px;
+}
+
+.cont-vid-phone {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.cont-vid-phone a img {
+    width: 100%;
+}
+
+.cont-button {
+    text-align: center;
+    margin: 50px;
+}
+
+.btn-cta {
+    background-color: var(--color-golden);
+    padding: 20px;
+    transition: ease-in-out .2s all;
+}
+
+/*::::: CONTENEDOR 2 :::::*/
+
+#contenedor2 {
+    /* background-color: var(--bg-div); */
+    height: max-content;
+    width: 100%;
+    margin-top: 200px;
+    padding: 50px;
+}
+
+.title-info > h1 {
+    color: #333;
+}
+
+.info1 {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.cont-img-info {
+    border: 3px solid var(--bg-contenedor);
+    width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cont-img-info, .span-info {
+    margin: 0 25px;
+}
+
+.cont-img-info > img {
+    width: 100%;
+}
+
+.span-info > h2, .span-info > p {
+    color: var(--font-c-two);
+}
+
+@media only screen and (min-width: 769px){
+
+    .cont-vid-phone {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 769px){
+
+    .cont-img > a {
+        width: 90%;
+    }
+
+    .parrafo {
+        width: 100%; 
+    }
+
+    .cont-info {
+        position: inherit;
+        top: unset;
+        right: unset;
+        box-shadow: unset;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .cont-img-info {
+        width: 80%;
+    }
+
+    #contenedor2 {
+        margin-top: 50px;
+        padding: 50px 0;
+    }
+
+    .info1 {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .cont-vid {
+        display: none;
+    }
+
+    .cont-button {
+        margin: 50px 0;
+    }
+
+}
