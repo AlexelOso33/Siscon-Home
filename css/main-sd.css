@@ -975,9 +975,9 @@ footer {
     height: 12rem;
     text-align: center;
     background: #74537c;
-    background: -moz-linear-gradient(top, #74537c 0%, #7076aa 100%);
-    background: -webkit-linear-gradient(top, #74537c 0%,#7076aa 100%);
-    background: linear-gradient(to bottom, #74537c 0%,#7076aa 100%);
+    background: -moz-linear-gradient(top, #6d2a7e 0%, #7076aa 100%);
+    background: -webkit-linear-gradient(top, #74537c 0%, #7076aa 100%);
+    background: linear-gradient(to bottom, #74537c 0%, #7076aa 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74537c', endColorstr='#7076aa',GradientType=0 );
     -webkit-box-shadow: 0 -2px 7px -1px #A8A8A8;
     box-shadow: 0 -2px 7px -1px #A8A8A8;

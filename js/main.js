@@ -57,7 +57,7 @@ $(document).ready(function(){
         });
         // ******************************** //
 
-        var scrolling_navigation_offset_top = $('#inicio').offset().top;
+        /* var scrolling_navigation_offset_top = $('#inicio').offset().top;
         if(!($('.head-one').hasClass('hide'))){
             var scrolling_navigation = function () {
                 var scroll_top = $(window).scrollTop()-100;
@@ -77,7 +77,7 @@ $(document).ready(function(){
             $(window).scroll(function () {
                 scrolling_navigation();
             });
-        }
+        } */
 
         var iniciarVideo = function(){
             var video = document.getElementById('video-presentacion');

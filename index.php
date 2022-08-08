@@ -98,8 +98,8 @@
     </header>
     <div class="contenedor-body">
         <section id="inicio">
-            <div class="bg-inicio-one"></div>
-            <div class="bg-inicio-two"></div>
+            <!-- <div class="bg-inicio-one"></div>
+            <div class="bg-inicio-two"></div> -->
             <!-- <div class="bg-inicio-three"></div> -->
             <div class="contenedor-hero">
                 <div class="h1-hero">
@@ -349,7 +349,7 @@
                     <a class="a-bg-gold" href="#demostracion">¡Quiero una demostración gratuita primero!</a>
                 </div> -->
             </div>
-            <div class="bg-square-foot-plan"></div>
+            <!-- <div class="bg-square-foot-plan"></div> -->
             <div class="bg-round"></div>
         </section>
         <section id="contacto">
@@ -378,7 +378,7 @@
                             <label for="coment-form">Consulta *</label>
                             <textarea name="coment-form" id="coment-form" maxlenght="550" placeholder="Deja tu consulta aquí..." class="form-control" rows="6"></textarea>
                         </div>
-                        <div class="g-recaptcha" data-sitekey="6Legoj4bAAAAALPJoXAONoArBoHbbtjSlrumQc-l" style="width: 304px;margin: 0 auto;"></div>
+                        <div class="g-recaptcha" data-sitekey="6LdhPFQhAAAAAJnAN69RnP1Mlu-k36muahXLkF_6" style="width: 304px;margin: 0 auto;"></div>
                         <input type="submit" class="btn btn-success" id="send-form" value="Enviar consulta" required>
                     </form>
                 </div>

@@ -7,8 +7,9 @@
     --bg-div: rgb(216, 216, 216);
     --font-c-one : #f9fafc;
     --font-c-two : #333;
-    --font-a : #6896a0;
-    --color-golden : #fcb257;
+    --font-a : #3c8dbc;
+    /* --font-a: #3c8dbc; */
+    --color-golden : #e99e41;
     --transition-a : ease-in-out .2s all;
     --transition-head : ease-in-out .4s all;
     --slide-a : calc(100wv + 100px);
@@ -28,9 +29,6 @@
 }
 
 /***********************/
-* {
-    scroll-behavior: smooth;
-}
 
 *, ::after, ::before {
     box-sizing: border-box;
@@ -111,11 +109,11 @@ a:hover {
 
 .preloader {
     display: flex;
-    background: #5f547f;
-    background: -moz-linear-gradient(top,  #5f547f 0%, #6896a0 100%);
+    background: var(--font-a);
+    /* background: -moz-linear-gradient(top,  #5f547f 0%, #6896a0 100%);
     background: -webkit-linear-gradient(top,  #5f547f 0%,#6896a0 100%);
     background: linear-gradient(to bottom,  #5f547f 0%,#6896a0 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f547f', endColorstr='#6896a0',GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f547f', endColorstr='#6896a0',GradientType=0 ); */
     height: 100vh;
     width: 100%;
     transition: height .2s linear;
@@ -158,7 +156,7 @@ a:hover {
 
 .preloader-span > span {
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--font-c-one);
 }
 
 /* ::::::::: Estilos personales :::::::::: */
@@ -170,7 +168,7 @@ a:hover {
 .head-one {
     display: block;
     position: fixed;
-    background: #6896a0;
+    background: var(--font-a);
     /* background-image: url('../img/25100.jpg');
     background-position: center;
     background-repeat: no-repeat; */
@@ -180,7 +178,8 @@ a:hover {
     width: 100vw;
     height: 100px;
     z-index: 10;
-    border-bottom: 4px solid rgb(173 183 255);
+    /* border-bottom: 4px solid rgb(173 183 255); */
+    box-shadow: var(--shad-f-f);
 }
 
 .head-dos {
@@ -189,10 +188,10 @@ a:hover {
     top: 0;
     right: 0;
     width: 7vw;
-    background: #6896a0;
+    background: var(--font-a);
     height: 80px;
     z-index: 1;
-    border-bottom: 4px solid rgb(173 183 255);
+    border-bottom: 4px solid rgb(141, 148, 207);
     border-bottom-left-radius: 80%;
 }
 
@@ -255,17 +254,15 @@ a:hover {
     width: 70px;
     padding: 2px;
     margin: 5px;
-}
-
-.img-head a img:hover {
-    width: 70px;
-    padding: 2px;
-    margin: 5px;
     background-color: var(--font-c-one);
     border: 2px solid rgb(173 183 255);
     cursor: pointer;
     border-radius: 50%;
     transform: rotate(-15deg);
+}
+
+.img-head a img:hover{
+    transform: scale(1.1);
 }
 
 .cont-menu-bars {
@@ -319,9 +316,9 @@ a:hover {
 
 #inicio {
     padding-top: calc(100vh - (100vh - 100px));
-    background-image: url('../img/515-min.jpg');
+    /* background-image: url('../img/515-min.jpg');
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: bottom; */
     display: block;
     position: relative;
     width: 100%;
@@ -335,11 +332,11 @@ a:hover {
 
 #demostracion, #contacto, #contract {
     display: block;
-    background: #5f547f;
-    background: -moz-linear-gradient(top,  #5f547f 0%, #6896a0 100%);
+    background: var(--font-a);
+    /* background: -moz-linear-gradient(top,  #5f547f 0%, #6896a0 100%);
     background: -webkit-linear-gradient(top,  #5f547f 0%,#6896a0 100%);
     background: linear-gradient(to bottom,  #5f547f 0%,#6896a0 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f547f', endColorstr='#6896a0',GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f547f', endColorstr='#6896a0',GradientType=0 ); */
     height: 100vh;
     min-height: 800px;
     z-index: 0;
@@ -361,7 +358,7 @@ a:hover {
     scroll-snap-stop: always; */
 }
 
-.bg-inicio-one {
+/* .bg-inicio-one {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -383,7 +380,7 @@ a:hover {
     border-bottom-right-radius: 100%;
     z-index: -4;
     background: linear-gradient(to bottom, #5f547f 0%,#6896a0 100%);
-}
+} */
 
 .bg-inicio-three {
     position: absolute;
@@ -452,7 +449,8 @@ a:hover {
     left: 0;
     top: 0;
     z-index: -4;
-    background: linear-gradient(to bottom, #5f547f 0%,#6896a0 100%);
+    /* background: linear-gradient(to bottom, #5f547f 0%,#6896a0 100%); */
+    background-color: var(--font-a);
 }
 
 .bg-round-three {
@@ -494,7 +492,7 @@ a:hover {
     background-color: var(--bg-div);
 }
 
-.bg-square-foot-plan {
+/* .bg-square-foot-plan {
     display: block;
     width: 70%;
     height: 20vh;
@@ -506,7 +504,7 @@ a:hover {
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     background-color: rgb(154 161 255);
-}
+} */
 
 /* SECCIÓN SISTEMA */
 
@@ -1397,15 +1395,15 @@ footer {
     display: block;
     position: relative;
     background-color: var(--font-c-one);
-    background-image: url('../img/25100-min.jpg');
+    /* background-image: url('../img/25100-min.jpg');
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     background-size: 100%;
     height: 250px;
     color: var(--font-c-two);
-    border-top: 4px solid rgb(173 183 255);
+    /* border-top: 4px solid rgb(173 183 255); */
+    box-shadow: var(--shad-h-f);
     scroll-snap-align: center;
-    scroll-snap-stop: always;
 }
 
 .foot-flex {
