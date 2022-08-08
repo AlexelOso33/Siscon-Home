@@ -182,12 +182,6 @@ a:hover {
     width: 70px;
     padding: 2px;
     margin: 5px;
-}
-
-.img-head a img:hover {
-    width: 70px;
-    padding: 2px;
-    margin: 5px;
     background-color: var(--font-c-one);
     border: 2px solid rgb(173 183 255);
     cursor: pointer;
