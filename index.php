@@ -309,10 +309,24 @@
                         <span class="tipo-plan">Básico</span>
                         <span class="money-plan"><span class="symbol-dollar-plan">$</span><span class="transition-all" id="basic-plan"><?php echo $price_one; ?></span><span class="exp-number transition-all">/ mes</span></span>
                         <span class="info-pay-plan">Precio incluye IVA</span>
-                        <button class="btn btn-plan" data-id="1" id="sel-plan-one1" disabled>Prueba 15 días gratis</button>
+                        <button class="btn btn-plan" data-id="1" id="sel-plan-one1" disabled>Prueba 10 días gratis</button>
                         <span style="margin-bottom: 15px;font-size: 1.5rem;"><strong>Funciones básicas +</strong></span>
                         <ul>
-                            <li><i class="fas fa-check"></i>&nbspHasta 5 usuarios en simultáneo</li>
+                            <li><i class="fas fa-check"></i>&nbspHasta 1 usuarios en simultáneo</li>
+                            <li><i class="fas fa-check"></i>&nbspMódulos de venta, productos y caja</li>
+                            <li><i class="fas fa-check"></i>&nbspListado de hasta 500 productos</li>
+                            <li><i class="fas fa-check"></i>&nbspPersonalización de perfiles</li>
+                        </ul>
+                    </div>
+                    <div class="plan-box">
+                        <div class="sistema-box">SISCON® POS</div>
+                        <span class="tipo-plan">Standard</span>
+                        <span class="money-plan"><span class="symbol-dollar-plan">$</span><span class="transition-all" id="basic-plan"><?php echo $price_one; ?></span><span class="exp-number transition-all">/ mes</span></span>
+                        <span class="info-pay-plan">Precio incluye IVA</span>
+                        <button class="btn btn-plan" data-id="1" id="sel-plan-one1" disabled>Prueba 10 días gratis</button>
+                        <span style="margin-bottom: 15px;font-size: 1.5rem;"><strong>Funciones básicas +</strong></span>
+                        <ul>
+                            <li><i class="fas fa-check"></i>&nbspHasta 3 usuarios en simultáneo</li>
                             <li><i class="fas fa-check"></i>&nbspMódulos de venta, productos y caja</li>
                             <li><i class="fas fa-check"></i>&nbspListado de hasta 1000 productos</li>
                             <li><i class="fas fa-check"></i>&nbspPersonalización de perfiles</li>
@@ -323,7 +337,7 @@
                         <span class="tipo-plan-star">Full</span>
                         <span class="money-plan"><span class="symbol-dollar-plan">$</span><span class="transition-all" id="full-plan"><?php echo $price_two; ?></span><span class="exp-number transition-all">/ mes</span></span>
                         <span class="info-pay-plan">Precio incluye IVA</span>
-                        <button class="btn btn-plan" data-id="2" id="sel-plan-two2" disabled>Prueba 15 días gratis</button>
+                        <button class="btn btn-plan" data-id="2" id="sel-plan-two2" disabled>Prueba 10 días gratis</button>
                         <span style="margin-bottom: 15px;font-size: 1.5rem;"><strong>Todas las funciones anteriores +</strong></span>
                         <ul>
                             <li><i class="fas fa-check"></i>&nbspHasta 10 usuarios en simultáneo</li>
