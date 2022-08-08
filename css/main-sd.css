@@ -253,11 +253,6 @@ a:hover {
 
 #demostracion, #contacto, #contact-demo {
     display: block;
-    background: #5c41ab;
-    background: -moz-linear-gradient(top,  #5c41ab 0%,#3691a5 100%);
-    background: -webkit-linear-gradient(top,  #5c41ab 0%,#3691a5 100%);
-    background: linear-gradient(to bottom,  #5c41ab 0%,#3691a5 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f547f', endColorstr='#6896a0',GradientType=0 );
     height: 100vh;
     min-height: 800px;
     z-index: 0;

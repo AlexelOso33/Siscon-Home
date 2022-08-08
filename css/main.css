@@ -176,7 +176,7 @@ a:hover {
     top: 0;
     right: 0;
     width: 100vw;
-    height: 100px;
+    height: 70px;
     z-index: 10;
     /* border-bottom: 4px solid rgb(173 183 255); */
     box-shadow: var(--shad-f-f);
@@ -210,7 +210,7 @@ a:hover {
     justify-content: flex-end;
     flex-wrap: nowrap;
     text-align: right;
-    padding: 35px 20px;
+    padding: 24px;
     position: relative;
 }
 
@@ -230,12 +230,12 @@ a:hover {
     bottom: -3px;
     width: 100%;
     height: 2px;
-    background-color: var(--color-golden);
+    background-color: var(--font-c-two);
     transform: scaleX(0);
 }
 
 .nav-header a:hover {
-    color: var(--color-golden);
+    color: var(--font-c-two);
     background-color: transparent!important;
 }
 
@@ -245,13 +245,13 @@ a:hover {
 
 .img-head {
     position: fixed;
-    top: 8px;
+    top: 2px;
     left: 40px;
     z-index: 11;
 }
 
 .img-head a img {
-    width: 70px;
+    width: 55px;
     padding: 2px;
     margin: 5px;
     background-color: var(--font-c-one);
@@ -332,7 +332,7 @@ a:hover {
 
 #demostracion, #contacto, #contract {
     display: block;
-    background: var(--font-a);
+    background: var(--font-c-one);
     /* background: -moz-linear-gradient(top,  #5f547f 0%, #6896a0 100%);
     background: -webkit-linear-gradient(top,  #5f547f 0%,#6896a0 100%);
     background: linear-gradient(to bottom,  #5f547f 0%,#6896a0 100%);
@@ -1017,7 +1017,7 @@ span.anim-span-demo {
     justify-content: flex-start;
     width: 300px;
     margin: 20px;
-    height: 50rem;
+    height: max-content;
     border-radius: 10px;
     padding: 20px;
     background-color: var(--font-c-one);
@@ -1234,7 +1234,7 @@ span.anim-span-demo {
 }
 
 .contact-head > h1, .contact-head > p, .contact-form > form > .form-group > label, .form-group > select  {
-    color: #fff;
+    color: var(--font-c-two);
     margin: 5px 0 5px 0;
 }
 
