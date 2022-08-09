@@ -345,6 +345,15 @@ a:hover {
     scroll-snap-stop: always; */
 }
 
+#procpago {
+    display: block;
+    background: var(--font-a);
+    height: 100vh;
+    min-height: 800px;
+    z-index: 0;
+    overflow: hidden;
+}
+
 #sistema, #planes {
     display: block;
     position: relative;
