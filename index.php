@@ -279,12 +279,12 @@
                         <span class="type-plan-sel">Tipo de sistema</span>
                         <div class="cont-sel-plan">
                             <span>POS</span>
-                            <div class="sel-radio">
+                            <!-- <div class="sel-radio">
                                 <div class="bg-radio-sist">
                                     <div class="round-radio-sist"></div>
                                 </div>
                             </div>
-                            <span>Distribución</span>
+                            <span>Distribución</span> -->
                         </div>
                     </div>
                     <div class="contenedor-plan">
@@ -307,10 +307,10 @@
                     <div class="plan-box">
                         <div class="sistema-box">SISCON® POS</div>
                         <span class="tipo-plan">Básico</span>
-                        <span class="money-plan"><span class="symbol-dollar-plan">$</span><span class="transition-all" id="basic-plan"><?php echo $price_one; ?></span><span class="exp-number transition-all">/ mes</span></span>
+                        <span class="money-plan"><span class="symbol-dollar-plan">$</span><span class="transition-all" id="basic-plan"></span><span class="exp-number transition-all"></span></span>
                         <span class="info-pay-plan">Precio incluye IVA</span>
-                        <button class="btn btn-plan" data-id="1" id="sel-plan-one1" disabled>Prueba 10 días gratis</button>
-                        <span style="margin-bottom: 15px;font-size: 1.5rem;"><strong>Funciones básicas +</strong></span>
+                        <button class="btn btn-plan" data-id="1" id="sel-plan-one1" disabled>prueba 30 días gratis</button>
+                        <span style="margin-bottom: 15px;font-size: 1.5rem;"><strong>Funciones básicas</strong></span>
                         <ul>
                             <li><i class="fas fa-check"></i>&nbspHasta 1 usuarios en simultáneo</li>
                             <li><i class="fas fa-check"></i>&nbspMódulos de venta, productos y caja</li>
@@ -321,9 +321,9 @@
                     <div class="plan-box">
                         <div class="sistema-box">SISCON® POS</div>
                         <span class="tipo-plan">Standard</span>
-                        <span class="money-plan"><span class="symbol-dollar-plan">$</span><span class="transition-all" id="basic-plan"><?php echo $price_one; ?></span><span class="exp-number transition-all">/ mes</span></span>
+                        <span class="money-plan"><span class="symbol-dollar-plan">$</span><span class="transition-all" id="standard-plan"></span><span class="exp-number transition-all"></span></span>
                         <span class="info-pay-plan">Precio incluye IVA</span>
-                        <button class="btn btn-plan" data-id="1" id="sel-plan-one1" disabled>Prueba 10 días gratis</button>
+                        <button class="btn btn-plan" data-id="1" id="sel-plan-one1" disabled>prueba 30 días gratis</button>
                         <span style="margin-bottom: 15px;font-size: 1.5rem;"><strong>Funciones básicas +</strong></span>
                         <ul>
                             <li><i class="fas fa-check"></i>&nbspHasta 3 usuarios en simultáneo</li>
@@ -335,9 +335,9 @@
                     <div class="plan-box plan-star">
                         <div class="sistema-box">SISCON® POS</div>
                         <span class="tipo-plan-star">Full</span>
-                        <span class="money-plan"><span class="symbol-dollar-plan">$</span><span class="transition-all" id="full-plan"><?php echo $price_two; ?></span><span class="exp-number transition-all">/ mes</span></span>
+                        <span class="money-plan"><span class="symbol-dollar-plan">$</span><span class="transition-all" id="full-plan"></span><span class="exp-number transition-all"></span></span>
                         <span class="info-pay-plan">Precio incluye IVA</span>
-                        <button class="btn btn-plan" data-id="2" id="sel-plan-two2" disabled>Prueba 10 días gratis</button>
+                        <button class="btn btn-plan" data-id="2" id="sel-plan-two2" disabled>prueba 30 días gratis</button>
                         <span style="margin-bottom: 15px;font-size: 1.5rem;"><strong>Todas las funciones anteriores +</strong></span>
                         <ul>
                             <li><i class="fas fa-check"></i>&nbspHasta 10 usuarios en simultáneo</li>
@@ -346,7 +346,7 @@
                             <li><i class="fas fa-check"></i>&nbspMódulo Reportes</li>
                         </ul>
                     </div>
-                    <div class="plan-box">
+                    <!-- <div class="plan-box">
                         <span class="tipo-plan">Customizable</span>
                         <span class="custom-plan">Solicitar cotización</span>
                         <button class="btn btn-plan" data-id="3" id="sel-plan-three" disabled>Pedir cotización</button>
@@ -357,14 +357,14 @@
                             <li><i class="fas fa-check"></i>&nbspSoporte 24/7</li>
                             <li><i class="fas fa-check"></i>&nbspAtención EXCUSIVA</li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- <div class="foot-planes">
                     <a class="a-bg-gold" href="#demostracion">¡Quiero una demostración gratuita primero!</a>
                 </div> -->
             </div>
             <!-- <div class="bg-square-foot-plan"></div> -->
-            <div class="bg-round"></div>
+            <!-- <div class="bg-round"></div> -->
         </section>
         <section id="contacto">
             <div class="body-contact">

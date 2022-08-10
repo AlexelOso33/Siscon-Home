@@ -1,5 +1,36 @@
 $(document).ready(function(){
 
+    let pba, dba, pbm, dbm, pfa, dfa, pfm, dfm, pim, pia;
+
+    // Script para tomar los precios actuales de SISCON
+    $.ajax({
+        type: 'POST',
+        data: {
+            'accion' : 'tomar-precios'
+        }, 
+        url: 'functions/montos.php',
+        dataType: 'json',
+        success: function(data){
+            if(data !== null){
+                pba = data[0];
+                dba = data[1];
+                pbm = data[2];
+                dbm = data[3];
+                pia = data[4];
+                dfa = data[5];
+                pim = data[6];
+                dfm = data[7];
+                pfm = data[8];
+                pfa = data[9];
+
+                $('#basic-plan').html(pbm);
+                $('#standard-plan').html(pim);
+                $('#full-plan').html(pfm);
+                $('.exp-number').html("/ mes");
+            }
+        }
+    })
+
     // MOBILE SCRIPTS & CSS //
     $('.nav-mob-full').on('focusout', function(){
         $('.nav-mob-full').addClass('nav-mob-f-hidden');
@@ -147,23 +178,29 @@ $(document).ready(function(){
         if($(this).children('div.round-radio').hasClass('round-radio-r')){
             $(this).children('div.round-radio').removeClass('round-radio-r');
             if($('.bg-radio-sist').children('div.round-radio-sist').hasClass('round-radio-sist-r')){
-                $('span#basic-plan').html('2.999');
-                $('span#full-plan').html('3.499');
+                // SISCON DISTRO
+                $('span#basic-plan').html(dbm);
+                $('span#full-plan').html(dfm);
                 $('.exp-number').html('/ mes');
             } else {
-                $('span#basic-plan').html('2.499');
-                $('span#full-plan').html('2.999');
+                // SISCON POS
+                $('span#basic-plan').html(pbm);
+                $('span#standard-plan').html(pim);
+                $('span#full-plan').html(pfm);
                 $('.exp-number').html('/ mes');
             }
         } else {
             $(this).children('div.round-radio').addClass('round-radio-r');
             if($('.bg-radio-sist').children('div.round-radio-sist').hasClass('round-radio-sist-r')){
-                $('span#basic-plan').html('29.999');
-                $('span#full-plan').html('35.699');
+                // SISCON DISTRO
+                $('span#basic-plan').html(dba);
+                $('span#full-plan').html(dfa);
                 $('.exp-number').html('/ anual');
             } else {
-                $('span#basic-plan').html('25.489');
-                $('span#full-plan').html('29.999');
+                // SISCON POS
+                $('span#basic-plan').html(pba);
+                $('span#standard-plan').html(pia);
+                $('span#full-plan').html(pfa);
                 $('.exp-number').html('/ anual');
             }
         }

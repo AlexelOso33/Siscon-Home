@@ -1,6 +1,26 @@
 <?php
 
-    function tomarMontos($ts, $ps, $tps){
+    include_once 'bd_conexion.php';
+
+    // Función para tomar los precios
+    if($_POST['accion'] == 'tomar-precios'){
+        $sql = "SELECT price FROM prices_service";
+        $cons = mysqli_query($conn, $sql);
+        $res = mysqli_fetch_all($cons);
+        $res1 = [];
+        foreach ($res as $k => $v) {
+            $num = number_format($v[0], 0, ',', '.');
+            array_push($res1, $num);
+        }
+        /* echo "<pre>";
+        var_dump($res1);
+        echo "</pre>";
+        die(); */
+        
+        die(json_encode($res1));
+    }
+
+    /* function tomarMontos($ts, $ps, $tps){
 
         // SISCON POS
         if($ts == 1 && $ps == 1 && $tps == 1){
@@ -23,7 +43,7 @@
 
         return $monto;
 
-    }
+    } */
 
     function expirationDate($dia, $anual){
         if($anual == 1){

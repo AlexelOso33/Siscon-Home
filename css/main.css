@@ -125,6 +125,7 @@ a:hover {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .preloader > .preload-img {
@@ -1403,7 +1404,7 @@ textarea {
 footer {
     display: block;
     position: relative;
-    background-color: var(--font-c-one);
+    background-color: var(--bg-div);
     /* background-image: url('../img/25100-min.jpg');
     background-position: center;
     background-repeat: no-repeat; */
@@ -1511,7 +1512,7 @@ footer {
     text-align: center;
     background-color: var(--font-c-two);
     color: var(--font-c-one);
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 100;
 }
 
@@ -1694,9 +1695,10 @@ a#politicas-priv {
         position: fixed;
         left: 0;
         top: 0;
-        background: #6896a0;
+        background: var(--font-a);
         z-index: 5;
-        border-bottom: 4px solid rgb(173 183 255);
+        /* border-bottom: 4px solid rgb(173 183 255); */
+        box-shadow: var(--shad-h-f);
     }
 
     .cont-img-mobile {
@@ -1723,6 +1725,7 @@ a#politicas-priv {
         display: block;
         width: 30px;
         margin: 20px 25px;
+        right: 15px;
         float: right;
         position: relative;
     }
@@ -1758,12 +1761,12 @@ a#politicas-priv {
     .nav-mob-full {
         width: 230px;
         height: 100vh;
-        background: #6896a0;
+        background: var(--font-a);
         z-index: 4;
         position: fixed;
-        padding-top: 80px;
+        padding-top: 90px;
         right: 0;
-        border-left: 4px solid rgb(173 183 255);
+        /* border-left: 4px solid rgb(173 183 255); */
     }
 
     .bg-ini-alert-mob {
@@ -1810,7 +1813,7 @@ a#politicas-priv {
     }
 
     #inicio {
-        padding-top: 100px;
+        padding-top: 70px;
         min-height: 680px;
         height: 680px;
     }
@@ -1849,7 +1852,7 @@ a#politicas-priv {
 
     .contenedor-hero {
         display: block;
-        padding-top: 65px;
+        /* padding-top: 65px; */
         width: 100%;
     }
 

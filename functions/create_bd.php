@@ -1,14 +1,11 @@
 <?php
 
-    $usuario = 'sisconsy_admin';
-    $password = 'sis25/33?con';
-    $host = 'localhost';
+    include 'bd_conexion.php';
 
-    $conn = mysqli_connect($host, $usuario, $password);
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
+    if(!isset($_GET['db'])){
+        header('Location: https://sisconsystem.online/404.html');
     }
-
+    
     // Variable BD
     $db = $_POST['db'];
 
