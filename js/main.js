@@ -80,10 +80,11 @@ $(document).ready(function(){
         
         // ::::::::::: PRELOADER ::::::::::: //
         $(window).on('load', function (){
-            $('.preload-img, .preloader-span').css('transform', 'opacity(0)');
-            $('.pre-index').css({'height': '0', 'z-index': '-9999'});
-            $('.preload-img').addClass('preload-img-hide').removeClass('preload-img');
-            $('.preloader-span').hide();
+            // $('.preload-img, .preloader-span').css('transform', 'opacity(0)');
+            // $('.pre-index').css({'height': '0', 'z-index': '-9999'});
+            $('.preloader').addClass('preloader-hide');
+            $('.preload-img').addClass('preload-img-hide');
+            // $('.preloader-span').hide();
             $('body').css('overflow', 'unset');
         });
         // ******************************** //

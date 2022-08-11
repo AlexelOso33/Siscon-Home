@@ -38,9 +38,9 @@
         <div class="preload-img transition-all">
             <img src="img/siscon160.png" alt="Siscon img">
         </div>
-        <div class="preloader-span transition-all">
+        <!-- <div class="preloader-span transition-all">
             <span>Cargando sitio...</span>
-        </div>
+        </div> -->
     </div>
     <div class="img-head">
         <a href="#inicio"><img class="transition-all" src="img/siscon160.png" alt="Siscon img"></a>
@@ -313,9 +313,9 @@
                         <span style="margin-bottom: 15px;font-size: 1.5rem;"><strong>Funciones básicas</strong></span>
                         <ul>
                             <li><i class="fas fa-check"></i>&nbspHasta 1 usuarios en simultáneo</li>
-                            <li><i class="fas fa-check"></i>&nbspMódulos de venta, productos y caja</li>
+                            <li><i class="fas fa-check"></i>&nbspMódulos de venta, productos y cajas</li>
                             <li><i class="fas fa-check"></i>&nbspListado de hasta 500 productos</li>
-                            <li><i class="fas fa-check"></i>&nbspPersonalización de perfiles</li>
+                            <!-- <li><i class="fas fa-check"></i>&nbspPersonalización de perfiles</li> -->
                         </ul>
                     </div>
                     <div class="plan-box">
@@ -327,9 +327,9 @@
                         <span style="margin-bottom: 15px;font-size: 1.5rem;"><strong>Funciones básicas +</strong></span>
                         <ul>
                             <li><i class="fas fa-check"></i>&nbspHasta 3 usuarios en simultáneo</li>
-                            <li><i class="fas fa-check"></i>&nbspMódulos de venta, productos y caja</li>
-                            <li><i class="fas fa-check"></i>&nbspListado de hasta 1000 productos</li>
-                            <li><i class="fas fa-check"></i>&nbspPersonalización de perfiles</li>
+                            <li><i class="fas fa-check"></i>&nbspMódulos de venta, productos, caja, stock e inventarios</li>
+                            <li><i class="fas fa-check"></i>&nbspListado de hasta 2000 productos</li>
+                            <li><i class="fas fa-check"></i>&nbspHasta 3 Puntos de venta</li>
                         </ul>
                     </div>
                     <div class="plan-box plan-star">
@@ -341,9 +341,9 @@
                         <span style="margin-bottom: 15px;font-size: 1.5rem;"><strong>Todas las funciones anteriores +</strong></span>
                         <ul>
                             <li><i class="fas fa-check"></i>&nbspHasta 10 usuarios en simultáneo</li>
-                            <li><i class="fas fa-check"></i>&nbspElección de plantillas de impresión</li>
-                            <li><i class="fas fa-check"></i>&nbspACTIVA Lista de Precios</li>
-                            <li><i class="fas fa-check"></i>&nbspMódulo Reportes</li>
+                            <li><i class="fas fa-check"></i>&nbspMódulos de venta, productos, caja, stock, inventarios, lista de precios y reportes</li>
+                            <li><i class="fas fa-check"></i>&nbspListado de hasta 5000 productos</li>
+                            <li><i class="fas fa-check"></i>&nbspHasta 10 Puntos de venta</li>
                         </ul>
                     </div>
                     <!-- <div class="plan-box">

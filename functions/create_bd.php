@@ -1,11 +1,11 @@
 <?php
 
-    include 'bd_conexion.php';
-
     if(!isset($_GET['db'])){
         header('Location: https://sisconsystem.online/404.html');
     }
-    
+
+    include 'bd_conexion.php';
+
     // Variable BD
     $db = $_POST['db'];
 
