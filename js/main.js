@@ -636,6 +636,31 @@ $(document).ready(function(){
         })
     })
 
+    // Validación repetición de nueva contraseña
+    $('#rep-pass').on('blur keyup', function() {
+        if($(this).val() == "") {
+          $('#rep-pass').parents('.form-group').removeClass('has-error has-success');
+          $('#new-pass').parents('.form-group').removeClass('has-error has-success');
+          $('#span.error-pass').text("");
+          $('span.error-pass').hide();
+        } else {
+          if($(this).val() == $('#new-pass').val()) {
+            // $('#resultado_password').text('¡Correcto!');
+            $('span.error-pass').text('Las contraseñas deben coincidir.');
+            $('span.error-pass').hide();
+            $('#rep-pass').parents('.form-group').removeClass('has-error');
+            $('#new-pass').parents('.form-group').removeClass('has-error');
+            $('#send-newpass').attr('disabled', false);
+          } else {
+            $('span.error-pass').text('Debe ingresar una contraseña válida.');
+            $('span.error-pass').show();
+            $('#rep-pass').parents('.form-group').addClass('has-error').removeClass('has-success');
+            $('#new-pass').parents('.form-group').addClass('has-error').removeClass('has-success');
+            $('#send-newpass').attr('disabled', true);
+          }
+        }
+      });
+
     $('#send-newpass').on('click', function(){
         var contrasena = $('#new-pass').val();
         var id = $('#id-user').val();
@@ -669,7 +694,7 @@ $(document).ready(function(){
                             confirmButtonText: 'Si'
                         }).then((result) => {
                             if(result.value){
-                                window.location.href = 'https://www.siscon-system.com';
+                                window.location.href = 'https://app.sisconsystem.online';
                             } else {
                                 window.location.reload();
                             }
@@ -678,7 +703,7 @@ $(document).ready(function(){
                 } 
             })
         } else {
-            $('.error-pass').css('display', 'block');
+            $('.error-pass').show();
         }
     })
 
