@@ -39,7 +39,7 @@
                         </div>
                         <span class="error-pass golden" style="display:none;">Si el correo que ingresaste se encuentra en nuestras bases de datos<br>comprueba tu <strong>buzón de entrada</strong> o dentro de <strong>Correo no deseado</strong> <br>para volver a generar una <strong>nueva contraseña</strong>.</span><br><br>
                         <input type="hidden" id="id-user" value="<?php echo $key; ?>">
-                        <input type="submit" class="btn btn-success" value="Generar">
+                        <input type="submit" class="btn btn-success" value="Enviar correo">
                     </div>
                 </form>
                 <div class="preloader-a" style="margin-top: 50px;">
@@ -53,5 +53,31 @@
             <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
             <!-- <script src="js/main.js"></script> -->
+            <script>
+                $(document).ready(function(){
+                    $('#send-recpass').on('submit', (e) => {
+                        e.preventDefault();
+                        let mail = $('#email').val();
+                        let url = './functions/model.php';
+                        if(mail !== ''){
+                            $.ajax({
+                                type: 'POST',
+                                data: {
+                                    'email' : mail,
+                                    'action' : 'recuperar-password'
+                                },
+                                url: url,
+                                dataType: 'json',
+                                success: function(d){
+                                    if(d.respuesta == 'ok'){
+                                        $('.error-pass').show();
+                                        $('.btn-success').css('disabled', true);
+                                    }
+                                }
+                            })
+                        }
+                    })
+                })
+            </script>
         </body>
         </html>

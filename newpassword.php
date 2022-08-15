@@ -2,7 +2,7 @@
     $key = $_GET['us'];
     $hid = $_GET['hid'];
 
-    if(!isset($key) || !filter_var($key, FILTER_VALIDATE_INT) || !password_verify($key, $hid)){
+    if(!isset($key) && !filter_var($key, FILTER_VALIDATE_INT) && !password_verify($key, $hid)){
         die('Error al cargar el sitio.<br>ERROR: acceso no autorizado.');
     }
 
@@ -52,7 +52,6 @@
                     <img src="img/icon-rounded.png" alt="Siscon img" style="width:150px;">
                 </div>
                 <div class="preloader-span">
-                    <?php if($estado == 2){ ?>
                     <span>Hola, <?php echo $nombre; ?>.<br><br>Registra tu nueva contraseña para tu usuario <span class="golden"><?php echo $usuario; ?></span>.</span><br><br>
                     <div class="form-group has-feedback">
                         <input type="password" class="form-control" name="new-pass" id="new-pass" placeholder="Contraseña" style="margin-bottom:20px;">
@@ -63,9 +62,6 @@
                     <input type="hidden" id="id-user" value="<?php echo $key; ?>">
                     <input type="button" class="btn btn-success" id="send-newpass" value="Generar" disabled>
                 </div>
-                <?php } else { ?>
-                    <span>Tu contraseña ya ha sido generada.</span>
-                <?php } ?>
                 <div class="preloader-a" style="margin-top: 50px;">
                     <a href="https://app.sisconsystem.online" class="pre-btn-back">Ir a Siscon System</a>
                 </div>

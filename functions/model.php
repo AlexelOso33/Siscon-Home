@@ -189,7 +189,7 @@
             $key = password_hash($name, PASSWORD_BCRYPT, $opciones);
     
             $title = 'Alta de usuario';
-            $url = 'https://hello.siscon-system.com/activate?a='.$key;
+            $url = 'https://sisconsystem.online/activate?a='.$key;
             $mensaje = file_get_contents('mailer2.php');
             
             // Replace variables en HTML
@@ -367,4 +367,5 @@
         die(json_encode($respuesta));
         $stmt->close();
     }
+
 ?>

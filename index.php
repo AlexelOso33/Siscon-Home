@@ -68,7 +68,7 @@
             <a href="#planes">Planes<div class="_underlineA"></div></a>
             <a href="#contacto">Contacto<div class="_underlineA"></div></a>
             <a href="#" class="privacy">Políticas de privacidad<div class="_underlineA"></div></a>
-            <a href="https://siscon-system.com" style="background-color:#f9fafc;color:#333;"><i class="fas fa-sign-out-alt"></i>&nbspSistema SISCON®<div class="_underlineA"></div></a>
+            <a href="https://app.sisconsystem.online" style="background-color:#f9fafc;color:#333;"><i class="fas fa-sign-out-alt"></i>&nbspSistema SISCON®<div class="_underlineA"></div></a>
             <!-- <a href="https://demo.siscon-system.com" style="background-color:#f9fafc;color:#333;"><i class="fas fa-sign-out-alt"></i>&nbspLive demo<div class="_underlineA"></div></a> -->
             <!-- <div class="bg-ini-alert-mob">
                 <div class="cont-arrow-up">
@@ -86,7 +86,7 @@
             <a href="#planes">Planes<div class="_underlineA"></div></a>
             <a href="#contacto">Contacto<div class="_underlineA"></div></a>
             <a href="#" class="privacy">Políticas de privacidad<div class="_underlineA"></div></a>
-            <a href="https://siscon-system.com"><i class="fas fa-sign-out-alt"></i>&nbspSistema SISCON®<div class="_underlineA"></div></a>
+            <a href="https://app.sisconsystem.online"><i class="fas fa-sign-out-alt"></i>&nbspSistema SISCON®<div class="_underlineA"></div></a>
             <!-- <a href="https://demo.siscon-system.com"><i class="fas fa-sign-out-alt"></i>&nbspLive demo<div class="_underlineA"></div></a> -->
         </div>
         <!-- <div class="bg-inicio-alert transition-all">
