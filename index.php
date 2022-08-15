@@ -309,7 +309,7 @@
                         <span class="tipo-plan">Básico</span>
                         <span class="money-plan"><span class="symbol-dollar-plan">$</span><span class="transition-all" id="basic-plan"></span><span class="exp-number transition-all"></span></span>
                         <span class="info-pay-plan">Precio incluye IVA</span>
-                        <button class="btn btn-plan" data-id="1" id="sel-plan-one1" disabled>prueba 30 días gratis</button>
+                        <!-- <button class="btn btn-plan" data-id="1" id="sel-plan-one1" disabled>prueba 30 días gratis</button> -->
                         <span style="margin-bottom: 15px;font-size: 1.5rem;"><strong>Funciones básicas</strong></span>
                         <ul>
                             <li><i class="fas fa-check"></i>&nbspHasta 1 usuarios en simultáneo</li>
@@ -323,7 +323,7 @@
                         <span class="tipo-plan">Standard</span>
                         <span class="money-plan"><span class="symbol-dollar-plan">$</span><span class="transition-all" id="standard-plan"></span><span class="exp-number transition-all"></span></span>
                         <span class="info-pay-plan">Precio incluye IVA</span>
-                        <button class="btn btn-plan" data-id="1" id="sel-plan-one1" disabled>prueba 30 días gratis</button>
+                        <!-- <button class="btn btn-plan" data-id="1" id="sel-plan-one1" disabled>prueba 30 días gratis</button> -->
                         <span style="margin-bottom: 15px;font-size: 1.5rem;"><strong>Funciones básicas +</strong></span>
                         <ul>
                             <li><i class="fas fa-check"></i>&nbspHasta 3 usuarios en simultáneo</li>
@@ -337,7 +337,7 @@
                         <span class="tipo-plan-star">Full</span>
                         <span class="money-plan"><span class="symbol-dollar-plan">$</span><span class="transition-all" id="full-plan"></span><span class="exp-number transition-all"></span></span>
                         <span class="info-pay-plan">Precio incluye IVA</span>
-                        <button class="btn btn-plan" data-id="2" id="sel-plan-two2" disabled>prueba 30 días gratis</button>
+                        <!-- <button class="btn btn-plan" data-id="2" id="sel-plan-two2" disabled>prueba 30 días gratis</button> -->
                         <span style="margin-bottom: 15px;font-size: 1.5rem;"><strong>Todas las funciones anteriores +</strong></span>
                         <ul>
                             <li><i class="fas fa-check"></i>&nbspHasta 10 usuarios en simultáneo</li>
